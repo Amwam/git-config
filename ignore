@@ -40,3 +40,5 @@ pylama.ini
 tags
 .tags
 *.pyc
+*.vscode
+tsconfig.json
