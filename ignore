@@ -39,3 +39,7 @@ tags
 *.pyc
 *.vscode
 tsconfig.json
+
+# direnv
+.envbin
+.envrc
