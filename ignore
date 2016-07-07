@@ -35,6 +35,8 @@ out
 pylama.ini
 .paver_targets
 tags
+tags.lock
+tags.temp
 .tags
 *.pyc
 *.vscode
@@ -43,3 +45,6 @@ tsconfig.json
 # direnv
 .envbin
 .envrc
+
+# Python type stub files
+*.pyi
