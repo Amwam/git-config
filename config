@@ -6,6 +6,7 @@
     smudge = git media smudge %f
 [core]
     editor = /usr/local/bin/nvim
+    excludesFile = /Users/amit/.config/git/ignore
 [credential]
     helper = osxkeychain
 [alias]
@@ -21,10 +22,10 @@
     enabled = true
     autoupdate = true
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [color]
     ui = auto
@@ -45,13 +46,13 @@
     smudge = git lfs smudge %f
     required = true
 [diff]
-	compactionHeuristic = true
-	tool = vimdiff
+    compactionHeuristic = true
+    tool = vimdiff
 [pager]
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = diff-highlight | less
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
 [use]
     signingkey = 75E4F19E
 [difftool]
-	prompt = false
+    prompt = false
