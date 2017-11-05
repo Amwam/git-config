@@ -56,3 +56,8 @@
     signingkey = 75E4F19E
 [difftool]
     prompt = false
+[commit]
+	gpgsign = true
+	template = /Users/amit/.stCommitMsg
+[gpg]
+	program = gpg1

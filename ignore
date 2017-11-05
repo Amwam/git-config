@@ -41,6 +41,7 @@ tags.temp
 *.pyc
 *.vscode
 tsconfig.json
+.vimlocal
 
 # direnv
 .envbin
