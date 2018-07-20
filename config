@@ -18,6 +18,7 @@
     br = branch -avv
     oldest-ancestor = !zsh -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | head -1' -
     unmerged = branch -r --no-merged origin/master # Show all the branches not merged into master
+    poc = "! git push origin $(git rev-parse --abbrev-ref HEAD)"
 [rerere]
     enabled = true
     autoupdate = true
