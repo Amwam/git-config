@@ -40,7 +40,6 @@ tags.temp
 .tags
 *.pyc
 *.vscode
-tsconfig.json
 .vimlocal
 
 # direnv
