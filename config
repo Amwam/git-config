@@ -6,7 +6,7 @@
     smudge = git media smudge %f
 [core]
     editor = /usr/local/bin/nvim
-    excludesFile = /Users/amit/.config/git/ignore
+    excludesFile = ~/.config/git/ignore
 	commitGraph = true
 [credential]
     helper = osxkeychain
