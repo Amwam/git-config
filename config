@@ -17,9 +17,11 @@
     ci = commit
     co = checkout
     br = branch -avv
+    cob = !zsh -c 'git checkout -b $1 $1'
     oldest-ancestor = !zsh -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | head -1' -
     unmerged = branch -r --no-merged origin/master # Show all the branches not merged into master
-    poc = "! git push origin $(git rev-parse --abbrev-ref HEAD)"
+    poc = "! git push -u origin $(git rev-parse --abbrev-ref HEAD)"
+    pocf = "! git push -u origin $(git rev-parse --abbrev-ref HEAD) --force-with-lease"
 [rerere]
     enabled = true
     autoupdate = true
