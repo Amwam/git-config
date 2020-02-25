@@ -48,3 +48,6 @@ tags.temp
 
 # Python type stub files
 *.pyi
+
+# Python user customisation preferences
+usercustomize.py

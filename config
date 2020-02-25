@@ -8,6 +8,7 @@
     editor = /usr/local/bin/nvim
     excludesFile = ~/.config/git/ignore
 	commitGraph = true
+	pager = "/usr/local/bin/delta --dark "
 [credential]
     helper = osxkeychain
 [alias]
@@ -34,7 +35,7 @@
     name = Amit Shah
     email = amit@amwam.me
     useconfigonly = true
-	signingkey = 55B7DAF14DC93D41E5366F41E1F5655244860868
+	signingkey = 52F0B9B0F4DAE0D9DDD1D7E65709697E75E4F19E
 [filter "hawser"]
     clean = git hawser clean %f
     smudge = git hawser smudge %f
@@ -45,17 +46,12 @@
     required = true
 [diff]
     compactionHeuristic = true
-    tool = vimdiff
 	colorMoved = true
-[pager]
-    log = diff-highlight | less
-    show = diff-highlight | less
-    diff = diff-highlight | less
 [use]
     signingkey = 75E4F19E
 [difftool]
     prompt = false
 [commit]
-	gpgsign = false
+	gpgsign = true
 [gpg]
 	program = gpg
