@@ -14,7 +14,7 @@
 [alias]
     lg = "!. ~/.config/git/helpers/log && pretty_git_log"
     lga = "!. ~/.config/git/helpers/log && pretty_git_log --all"
-    st = status
+    st = status -sb
     ci = commit
     co = checkout
     br = branch -avv
